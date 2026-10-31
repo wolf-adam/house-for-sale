@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Meadow House — For Sale</title>
+  <meta name="description" content="A beautiful family home for sale. Take the tour, see the neighborhood, and book a viewing." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="nav__brand" href="#top">Sunny Meadow House</a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#restyle">Restyle</a></li>
+        <li><a href="#nearby">Nearby</a></li>
+        <li><a href="#booking">Book a viewing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. Welcome / Hero -->
+    <section class="hero" id="home">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1>Your next chapter starts here</h1>
+        <p class="hero__tagline">A bright 4-bedroom family home with a garden, minutes from everything you need.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#booking">Book a viewing</a>
+          <a class="btn btn--ghost" href="#gallery">Take the tour</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key facts -->
+    <section class="facts container" aria-label="Key facts">
+      <div class="fact"><span class="fact__value">$485,000</span><span class="fact__label">Asking price</span></div>
+      <div class="fact"><span class="fact__value">168 m²</span><span class="fact__label">Living area</span></div>
+      <div class="fact"><span class="fact__value">4 + 2</span><span class="fact__label">Bed + bath</span></div>
+      <div class="fact"><span class="fact__value">620 m²</span><span class="fact__label">Lot size</span></div>
+      <div class="fact"><span class="fact__value">B</span><span class="fact__label">Energy rating</span></div>
+    </section>
+
+    <!-- 2. Gallery -->
+    <section class="section container" id="gallery">
+      <h2>Showing the home</h2>
+      <p class="section__intro">From the sunlit living room to the quiet backyard — have a look around.</p>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--wide">
+          <img src="https://picsum.photos/seed/house-front/1200/700" alt="Front view of the house" loading="lazy" />
+          <figcaption>Front view</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/house-living/800/600" alt="Living room" loading="lazy" />
+          <figcaption>Living room</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/house-kitchen/800/600" alt="Kitchen" loading="lazy" />
+          <figcaption>Kitchen</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/house-bedroom/800/600" alt="Main bedroom" loading="lazy" />
+          <figcaption>Main bedroom</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://picsum.photos/seed/house-bath/800/600" alt="Bathroom" loading="lazy" />
+          <figcaption>Bathroom</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide">
+          <img src="https://picsum.photos/seed/house-garden/1200/700" alt="Backyard garden" loading="lazy" />
+          <figcaption>Garden</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3. Room restyle slider -->
+    <section class="section section--alt" id="restyle">
+      <div class="container">
+        <h2>Imagine it refurnished</h2>
+        <p class="section__intro">Drag the handle to compare the room as it is today with an AI-generated restyle.</p>
+        <div class="compare" id="compare">
+          <img class="compare__img compare__img--before" src="https://picsum.photos/seed/room-before/1200/750" alt="Room as it currently is" />
+          <div class="compare__after" id="compareAfter">
+            <img class="compare__img" src="https://picsum.photos/seed/room-after/1200/750" alt="AI-generated restyle of the same room" />
+          </div>
+          <div class="compare__handle" id="compareHandle" aria-hidden="true">
+            <span class="compare__handle-icon">&#8596;</span>
+          </div>
+          <input class="compare__range" id="compareRange" type="range" min="0" max="100" value="50"
+                 aria-label="Reveal restyled image" />
+          <span class="compare__badge compare__badge--before">Current</span>
+          <span class="compare__badge compare__badge--after">AI restyle</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Nearby places -->
+    <section class="section container" id="nearby">
+      <h2>Everything close by</h2>
+      <p class="section__intro">Daily essentials and services within a short walk or drive.</p>
+      <ul class="nearby">
+        <li class="nearby__card"><span class="nearby__icon">🏥</span><div><strong>City General Hospital</strong><span>1.8 km · 5 min drive</span></div></li>
+        <li class="nearby__card"><span class="nearby__icon">🛒</span><div><strong>FreshMart Supermarket</strong><span>650 m · 8 min walk</span></div></li>
+        <li class="nearby__card"><span class="nearby__icon">💊</span><div><strong>GreenCross Pharmacy</strong><span>700 m · 9 min walk</span></div></li>
+        <li class="nearby__card"><span class="nearby__icon">🏫</span><div><strong>Meadowbrook Primary School</strong><span>900 m · 11 min walk</span></div></li>
+        <li class="nearby__card"><span class="nearby__icon">🧸</span><div><strong>Little Steps Kindergarten</strong><span>500 m · 6 min walk</span></div></li>
+        <li class="nearby__card"><span class="nearby__icon">🚌</span><div><strong>Bus stop — Line 12</strong><span>300 m · 4 min walk</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 5. Appointment booking -->
+    <section class="section section--alt" id="booking">
+      <div class="container">
+        <h2>Book a viewing</h2>
+        <p class="section__intro">Pick a date and time that suits you — we'll confirm by email.</p>
+        <form class="booking" id="bookingForm" novalidate>
+          <div class="booking__calendar">
+            <div class="calendar" id="calendar" aria-label="Choose a date"></div>
+            <fieldset class="slots">
+              <legend>Preferred time</legend>
+              <div class="slots__grid" id="slots">
+                <label><input type="radio" name="slot" value="10:00" required /> 10:00</label>
+                <label><input type="radio" name="slot" value="12:00" /> 12:00</label>
+                <label><input type="radio" name="slot" value="14:00" /> 14:00</label>
+                <label><input type="radio" name="slot" value="16:00" /> 16:00</label>
+                <label><input type="radio" name="slot" value="18:00" /> 18:00</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="booking__fields">
+            <label>Full name
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>Email
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+            <label>Phone (optional)
+              <input type="tel" name="phone" autocomplete="tel" />
+            </label>
+            <label>Message (optional)
+              <textarea name="message" rows="3" placeholder="Anything we should know?"></textarea>
+            </label>
+            <p class="booking__selection" id="bookingSelection">No date selected yet.</p>
+            <button class="btn btn--primary" type="submit">Request appointment</button>
+            <p class="form-status" id="bookingStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 6. Contact -->
+    <section class="section container" id="contact">
+      <h2>Get in touch</h2>
+      <p class="section__intro">Questions about the property? Send a message or reach out directly.</p>
+      <div class="contact">
+        <form class="contact__form" id="contactForm" novalidate>
+          <label>Name
+            <input type="text" name="name" required autocomplete="name" />
+          </label>
+          <label>Email
+            <input type="email" name="email" required autocomplete="email" />
+          </label>
+          <label>Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button class="btn btn--primary" type="submit">Send message</button>
+          <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="contact__details">
+          <h3>Direct contact</h3>
+          <p><strong>Phone:</strong> <a href="tel:+15550123456">+1 (555) 012-3456</a></p>
+          <p><strong>Email:</strong> <a href="mailto:viewings@sunnymeadow.example">viewings@sunnymeadow.example</a></p>
+          <p><strong>Address:</strong> 12 Sunny Meadow Lane, Springfield</p>
+          <p class="contact__note">Available weekdays 9:00–18:00.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Sunny Meadow House. Photos are illustrative placeholders.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
